@@ -1,0 +1,137 @@
+/*html tag selector controlling body tag*/
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body{
+    background-image: url('images/background.jpg');
+}
+div.wrapper{
+    /* percentages makes the website responsive to the size of browser */
+    width: 80%;
+    /* auto centers design */
+    margin: 40px auto; 
+    background-color: antiquewhite;
+    overflow:hidden;
+} 
+header h1, header h2, nav a, aside{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header h1, header h2{
+    line-height: .7;
+}
+header h1{
+    color:#5C3719;
+    font-size: 70px;
+    font-weight: 900;
+    text-align: center;
+}
+header h2{
+    color:#86451C;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 800;
+    text-align: center;
+}
+/*descendant selector, h2 is a child of main*/
+main h2{
+    color:#60422f;
+    max-width: 90%;
+    border-bottom: 2px solid #5c2b0d;
+    clear: both;
+    margin-left: 5%;
+}
+nav{
+    background-color: #90654B;
+    float:left;
+    width: 20%;
+    padding: 0px;
+}
+nav ul{
+    margin: 0px;
+    padding: 20px 0px;
+    text-align: center;
+}
+nav a{
+    color:#000000;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav li{
+    /* inline-block lets you define the size */
+    display: inline-block;
+    /* centers the nav text in the inline block */
+    padding:10px 0px;
+}
+nav li a:hover{
+    color: whitesmoke;
+}
+main li{
+    color:#5C3719;
+    list-style-type: decimal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main li a{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#000000;
+    border: #86451C;
+    line-height: 1.5;
+    text-decoration: none;
+}
+main li a:hover{
+    color:#E1B586;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    width: 85%;
+    margin-left: 5%;
+}
+main{
+    background-color:antiquewhite;
+    width: 60%;
+    float:left;
+}
+main p img{
+    float:right;
+    margin-left:10px;
+    margin-bottom: 10px;
+}
+main img{
+    margin-top: 10px;
+    width:200px;
+}
+aside{
+    background-color:#90654B;
+    width: 20%;
+    float:right;
+    padding:0px;
+}
+aside ul{
+    margin: 0px;
+    padding: 20px 0px;
+    text-align: center;
+}
+aside a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+}
+aside li{
+    display: inline-block;
+    padding: 10px 0px;
+}
+aside li a:hover{
+    color:whitesmoke;
+}
+footer{
+    padding: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-variant:small-caps;
+    clear:both;
+}
