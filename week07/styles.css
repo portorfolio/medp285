@@ -1,0 +1,127 @@
+/* import google font irish grover */
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+/* start border-box fix */
+html{
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+/* end border box fix */
+*{
+    font-family: 'Irish Grover', cursive;
+} 
+body{
+    background-image: url(images/_.jpeg);
+    background-size: cover; /*covers entire screen*/
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p,footer{
+    color: rgb(255, 107, 188);
+    text-transform:none;
+    margin: 0;
+    padding-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* adds padding to all of the wrapper child elements */
+#wrapper>*{
+    padding: 20px;
+}
+
+#wrapper{
+    margin: 0px auto;
+    /* centers the wrapper */
+
+    background-color: blueviolet;
+
+    color: white;
+
+    max-width: 1200px;
+    /* max-width: 100%; */
+
+    /* grid layout parent */
+   display: grid;
+   grid-template-columns: repeat(12,minmax(0,1fr))
+}
+
+#firstparagraph{
+    text-indent: 30px;
+}
+
+header{
+    background-color: rgb(255,237,246);
+   /* span all 12 cols, the / stands for through, so 1-13 */
+    grid-column: 1/13;
+    border-bottom: 2px solid rgb(255, 107, 188);
+    text-decoration: underline rgb(255, 107, 188);
+}
+main{
+    background-color: rgb(255,237,246);
+    /* span 6 cols */
+    grid-column: 4/10;
+}
+h2{
+    text-decoration: underline rgb(255, 107, 188);
+}
+h3{
+    font-size: 25px;
+    text-decoration: underline rgb(255, 107, 188);
+}
+p{
+    font-size: 20px;
+}
+hr{
+    border: 1px rgb(255, 107, 188) solid;
+}
+a{
+    text-decoration: none;
+}
+img {
+    width: 300px;
+    height: auto; 
+}
+nav{
+    background-color: white;
+   /* spans 3 cols */
+    grid-column: 1/4;
+    border-left: 2px solid rgb(255,237,246);
+}
+
+aside{
+    background-color: white;
+    /* span 3 cols  */
+    grid-column: 10/13;
+    border-right: 2px solid rgb(255,237,246);
+}
+
+main, nav, aside{
+    /* spans 2 rows */
+    grid-row: 2/4;
+}
+
+aside a, nav a{
+    color: rgb(184, 25, 112);
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+aside li a:hover, nav li a:hover{
+    color: rgb(255, 107, 188)
+}
+table, th, td {
+    border:1px solid rgb(184, 25, 112);
+    color:rgb(255, 107, 188);
+}
+
+footer{
+    background-color: rgb(255,237,246);
+    /* span all 12 cols, the / stands for through, so 1-13 */
+    grid-column: 1/13;
+    border-top: 2px solid rgb(255, 107, 188);
+}
