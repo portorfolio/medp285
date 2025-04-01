@@ -1,0 +1,169 @@
+/* GOOGLE IRISH GROVER FONT */
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+/* START BORDER-BOX FIX*/
+html{
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+/* END BORDER BOX FIX */
+*{
+    font-family: 'Irish Grover', cursive;
+} 
+
+body{
+    background-image: url(images/_.jpeg);
+    background-size: cover; /*covers entire screen*/
+    margin: 0;
+    padding: 0;
+}
+
+/* GROUPING */
+h1,h2,h3,h4,h5,h6,p,footer{
+    color: #FF6BBC;
+    text-transform:none;
+    margin: 0;
+    padding-bottom: 10px;
+    line-height: 1.5;
+}
+
+main, nav, aside{
+    /* spans 2 rows */
+    grid-row: 2/4;
+}
+
+aside a, nav a{
+    color: #B81970;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+aside li a:hover, nav li a:hover{
+    color: #FF6BBC;
+}
+table, th, td {
+    border:1px solid #B81970;
+    color: #FF6BBC;
+}
+
+/* adds padding to all of the wrapper child elements */
+#wrapper>*{
+    padding: 20px;
+}
+
+#wrapper{
+    margin: 0px auto;
+    /* centers the wrapper */
+
+    background-color: #FF6BBC;
+
+    color: #ffffff;
+
+    max-width: 1200px;
+    /* max-width: 100%; */
+
+    /* grid layout parent */
+   display: grid;
+   grid-template-columns: repeat(12,minmax(0,1fr)); /*specifies the number (and the widths) of columns in a grid layout */
+
+   border:2px solid #FF6BBC;
+}
+
+/* ALL FLEX CSS */
+.firstparagraph{
+    text-indent: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.email {
+    flex: 1; 
+}
+
+/* CSS ANIMATION */
+#heading1{
+    display: inline-block;
+    animation-name: example;
+    animation-duration: 3s;  
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    white-space: nowrap;
+}
+  
+@keyframes example {
+    from { transform: translateX(0px); }
+    to { transform: translateX(200px); }
+}
+
+/* INDIVIDUAL ELEMENTS */
+header{
+    background-color: #FFEDF6;
+   /* span all 12 cols, the / stands for through, so 1-13 */
+    grid-column: 1/8;
+    grid-row: 1/2;
+    border-bottom: 2px solid #FF6BBC;
+    text-decoration: underline #FF6BBC;
+}
+main{
+    background-color: #FFEDF6;
+    /* span 6 cols */
+    grid-column: 3/13;
+    border-right: 2px solid #FFEDF6;
+}
+nav{
+    background-color: #ffffff;
+   /* spans 3 cols */
+    grid-column: 1/3;
+}
+h2{
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 20%;
+    padding: 0px 10px 0px 10px;
+    margin-bottom: 10px;
+}
+h3{
+    font-size: 25px;
+    text-decoration: underline #FF6BBC;
+}
+p{
+    font-size: 20px;
+}
+td p{
+    text-align: center;
+}
+hr{
+    border: 1px solid #FF6BBC;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 300px;
+    height: auto; 
+}
+aside{
+    text-align: center;
+    background-color: #ffffff;
+    /* span 3 cols  */
+    grid-column: 8/13;
+    grid-row: 1/2;
+    border-bottom: 2px solid #FF6BBC;
+}
+footer{ 
+    background-color: #FFEDF6;
+    /* span all 12 cols, the / stands for through, so 1-13 */
+    grid-column: 1/13;
+    border-top: 2px solid #FF6BBC;
+    text-align: right;
+}
