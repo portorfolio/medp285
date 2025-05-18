@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+*, /*astericks mean it applies to all elements*/
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+/* END BORDER BOX FIX */
+
+*{
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+} 
+
+*{
+    cursor: url('images/2.png'), auto !important;
+}
+
+#wrapper{
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #000000;
+    color: #ffffff;
+    max-width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#wrap{
+    margin: 0px auto;
+    background-color: #ffffff;
+    color: #000000;
+    max-width: 100%;
+    display:grid;
+    grid-template-columns: repeat(12,minmax(0,1fr));
+}
+
+header{
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    width: 100%;
+    overflow: hidden;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+nav li{
+    display: relative;
+}
+
+nav li a {
+    font-size: 25px;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+nav li a:hover, .dropdown:hover .dropbtn, .dropbtn:focus{
+    text-decoration: underline #ffffff;
+}
+
+.dropdown{
+    overflow: hidden;
+    float: none;
+}
+
+/* customization of "cafes" button */
+.dropdown .dropbtn{
+    font-size: 25px;
+    border: none;
+    outline: none;
+    color:#ffffff;
+    padding:14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #000000;
+}
+
+.dropdown-content a{
+    float: none;
+    color:#ffffff;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover{
+    text-decoration: underline #ffffff;
+}
+
+.show{
+    display: block;
+}
+
+main{
+    grid-column: 3/10;
+    grid-row: 1;
+    padding: 40px 0px;
+    line-height: 1.5;
+}
+
+.two-by-two-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 1fr;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.two-by-two-grid div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 10px;
+    align-items: center;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+.two-by-two-grid h3{
+    margin:0;
+    font-size: 20px;
+}
+
+.tables-for-all{
+    margin: 10px 0px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tables-for-all td{
+    background-color:#F8E8D4;
+}
+
+.tables-for-all a, .two-by-two-grid a{
+    color:#000000;
+}
+
+.tables-for-all a:hover, .two-by-two-grid a:hover{
+    color:#7a5842;
+}
+
+.contact-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    grid-column: 1/13;
+    grid-row: 2;
+    border-top: 2px solid #000000;
+    padding: 2%;
+}
+
+img{
+    width:300px;
+    height: auto;
+}
+canvas{
+    pointer-events: none;
+}
