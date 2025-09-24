@@ -1,2 +1,2 @@
 # MEDP285
-Repository for my MEDP285 work!
+Repository for my Web Development 1 work!
